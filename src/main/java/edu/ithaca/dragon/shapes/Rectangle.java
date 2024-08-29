@@ -20,7 +20,13 @@ public class Rectangle {
     }
 
     public double longestLineWithin(){
-        throw new RuntimeException("Not implemented yet");
+        if (this.width > this.length){
+            return this.width;
+        }
+        else{
+            return this.length;
+        }
+
     }
     
 }
