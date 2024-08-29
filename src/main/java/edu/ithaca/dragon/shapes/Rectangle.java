@@ -11,7 +11,7 @@ public class Rectangle {
        throw new RuntimeException("Not implemented yet");
     }
 
-    public void doubleSize(){
+    public double doubleSize(){
         throw new RuntimeException("Not implemented yet");
     }
 
