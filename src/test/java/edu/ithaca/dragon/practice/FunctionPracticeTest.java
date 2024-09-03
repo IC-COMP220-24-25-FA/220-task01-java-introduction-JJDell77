@@ -1,9 +1,9 @@
 package edu.ithaca.dragon.practice;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-//import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-//  import static org.junit.jupiter.api.Assertions.assertTrue;
+  import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
 import org.junit.jupiter.api.Test;
@@ -29,6 +29,14 @@ public class FunctionPracticeTest {
         assertEquals(12, FunctionPractice.calcSalePrice(10, 0, 2));
         assertEquals(10, FunctionPractice.calcSalePrice(10, 50, 5));
         assertEquals(0, FunctionPractice.calcSalePrice(0, 0, 0));
+
+    }
+
+    @Test
+    public void isGoodDogTest(){
+        assertFalse(FunctionPractice.isGoodDog(2, 0, false));
+        assertTrue(FunctionPractice.isGoodDog(10, 0, false));
+        assertTrue(FunctionPractice.isGoodDog(2, 20, true));
 
     }
     
