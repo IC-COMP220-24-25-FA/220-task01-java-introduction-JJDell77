@@ -19,7 +19,7 @@ public class Triangle {
     }
 
     public double longestLineWithin(){
-        return (Double) null;
+        return Math.sqrt(((base * base) + (height * height)));
     }
     
 }

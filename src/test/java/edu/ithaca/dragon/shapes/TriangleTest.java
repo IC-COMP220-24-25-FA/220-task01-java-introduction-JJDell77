@@ -36,13 +36,13 @@ public class TriangleTest {
     @Test
     public void longestLineWithinTest(){
         Triangle myTriangle = new Triangle(3, 4);
-        assertEquals(5, myTriangle.longestLineWithin());
+        assertEquals(5, myTriangle.longestLineWithin(), 0.01);
 
         myTriangle = new Triangle(5, 8);
-        assertEquals(9.43, myTriangle.longestLineWithin());
+        assertEquals(9.43, myTriangle.longestLineWithin(), 0.01);
 
         myTriangle = new Triangle(2, 100);
-        assertEquals(141.42, myTriangle.longestLineWithin());
+        assertEquals(100.01, myTriangle.longestLineWithin(), 0.01);
 
     }
     
