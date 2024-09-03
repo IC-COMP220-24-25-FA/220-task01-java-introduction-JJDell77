@@ -2,6 +2,7 @@ package edu.ithaca.dragon.practice;
 
 import java.util.List;
 
+
 public class FunctionPractice {
 
     /**
@@ -50,7 +51,18 @@ public class FunctionPractice {
      * If the largest number occurs more than once, return the index of the first occurence.
      */
     public static int findFirstLargest(List<Integer> numbers){
-        throw new RuntimeException("Not Implemented");
+        if (numbers.size() == 0){
+            return -1;
+        }
+        int largestNumberPosition = 0;
+        int largestNumber = 0;
+        for (int i=0; i < numbers.size(); i++){
+            if (numbers.get(i) > largestNumber){
+                largestNumber = numbers.get(i);
+                largestNumberPosition = i;
+            }
+        }
+        return largestNumberPosition;
     }
 
     /**
