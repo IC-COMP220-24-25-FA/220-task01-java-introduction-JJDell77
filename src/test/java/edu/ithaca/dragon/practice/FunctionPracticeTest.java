@@ -75,24 +75,24 @@ public class FunctionPracticeTest {
         numbers.add(5);
         numbers.add(0);
         numbers.add(0);
-        assertEquals(0, FunctionPractice.findFirstLargest(numbers));
+        assertEquals(0, FunctionPractice.findLastLargest(numbers));
         List<Integer> numbers1 = new ArrayList<>();
         numbers1.add(0);
         numbers1.add(5);
         numbers1.add(0);
-        assertEquals(1, FunctionPractice.findFirstLargest(numbers1));
+        assertEquals(1, FunctionPractice.findLastLargest(numbers1));
         List<Integer> numbers2 = new ArrayList<>();
         numbers2.add(0);
         numbers2.add(0);
         numbers2.add(5);
-        assertEquals(2, FunctionPractice.findFirstLargest(numbers2));
+        assertEquals(2, FunctionPractice.findLastLargest(numbers2));
         List<Integer> numbers3 = new ArrayList<>();
-        numbers2.add(5);
-        numbers2.add(5);
-        numbers2.add(5);
-        assertEquals(2, FunctionPractice.findFirstLargest(numbers3));
+        numbers3.add(5);
+        numbers3.add(5);
+        numbers3.add(5);
+        assertEquals(2, FunctionPractice.findLastLargest(numbers3));
         List<Integer> numbers4 = new ArrayList<>();
-        assertEquals(-1, numbers4);
+        assertEquals(-1, FunctionPractice.findLastLargest(numbers4));
 
     }
     
