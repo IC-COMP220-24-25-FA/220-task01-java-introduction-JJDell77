@@ -14,9 +14,13 @@ public class Rectangle {
        return area;
     }
 
-    public double doubleSize(){
+    public void doubleSize(){
+        length = length * 2;
+        width = width * 2;
+       /* 
         double doubleSize = this.length * this.width * 2;
         return doubleSize;
+        */
     }
 
     public double longestLineWithin(){
