@@ -14,23 +14,22 @@ public class Circle {
      * @return the area of this circle
      */
     public double calcArea(){
-        double area = 3.14159 * this.radius * this.radius;
-        return area;
+        return Math.PI * radius * radius;
+        
     }
 
     /**
      * @post doubles the size of this circle
      */
     public double doubleSize(){
-        double newRadius = this.radius * 2;
-        return newRadius;
+        return radius * 2;
+        
     }
 
     /**
      * @return the longest straight line that can be drawn within this circle
      */
     public double longestLineWithin(){
-        double diameter = this.radius * 2;
-        return diameter;
+        return radius * 2;
     }
-}
+} 
