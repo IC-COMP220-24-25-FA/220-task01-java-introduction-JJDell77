@@ -96,26 +96,25 @@ public class FunctionPracticeTest {
 
     }
     
-@Test
-public void findFirstMostOccurencesOfLetterTest(){
+    @Test
+    public void findFirstMostOccurrencesOfLetterTest(){
+        List<String> words = new ArrayList<>();
+        words.add("teeth");
+        words.add("arm");
+        words.add("leg");
+        assertEquals("teeth", FunctionPractice.findFirstMostOccurencesOfLetter(words, 'e'));
 
-    List<String> words = new ArrayList<>();
-    words.add("teeth");
-    words.add("arm");
-    words.add("leg");
-    assertEquals("teeth", FunctionPractice.findFirstMostOccurencesOfLetter(words, 'e'));
-    List<String> words1 = new ArrayList<>();
-    words.add("arm");
-    words.add("teeth");
-    words.add("leg");
-    assertEquals("teeth", FunctionPractice.findFirstMostOccurencesOfLetter(words1, 'e'));
-    List<String> words3 = new ArrayList<>();
-    words.add("leg");
-    words.add("arm");
-    words.add("teeth");
-    assertEquals("teeth", FunctionPractice.findFirstMostOccurencesOfLetter(words3, 'e'));
+        List<String> words1 = new ArrayList<>();
+        words1.add("arm");
+        words1.add("teeth");
+        words1.add("leg");
+        assertEquals("teeth", FunctionPractice.findFirstMostOccurencesOfLetter(words1, 'e'));
 
-}
-
+        List<String> words2 = new ArrayList<>();
+        words2.add("leg");
+        words2.add("arm");
+        words2.add("teeth");
+        assertEquals("teeth", FunctionPractice.findFirstMostOccurencesOfLetter(words2, 'e'));
+    }
 
 }
