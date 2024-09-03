@@ -103,7 +103,17 @@ public void findFirstMostOccurencesOfLetterTest(){
     words.add("teeth");
     words.add("arm");
     words.add("leg");
-    assertEquals("teeth", FunctionPractice.findFirstMostOccurencesOfLetter(words, "e"));
+    assertEquals("teeth", FunctionPractice.findFirstMostOccurencesOfLetter(words, 'e'));
+    List<String> words1 = new ArrayList<>();
+    words.add("arm");
+    words.add("teeth");
+    words.add("leg");
+    assertEquals("teeth", FunctionPractice.findFirstMostOccurencesOfLetter(words1, 'e'));
+    List<String> words3 = new ArrayList<>();
+    words.add("leg");
+    words.add("arm");
+    words.add("teeth");
+    assertEquals("teeth", FunctionPractice.findFirstMostOccurencesOfLetter(words3, 'e'));
 
 }
 
