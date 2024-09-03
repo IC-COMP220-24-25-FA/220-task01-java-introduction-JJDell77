@@ -14,7 +14,7 @@ public class Triangle {
     }
 
     public double doubleSize(){
-        return (Double) null;
+        return calcArea() * 2;
 
     }
 
