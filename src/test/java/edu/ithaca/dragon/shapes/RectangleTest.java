@@ -1,7 +1,7 @@
 package edu.ithaca.dragon.shapes;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+//import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
@@ -33,15 +33,25 @@ public class RectangleTest {
     @Test
     public void doubleAreaTest(){
         Rectangle myRectangle = new Rectangle(1, 2);
-        assertEquals(4, myRectangle.doubleSize());
+        double firstArea = myRectangle.calcArea();
+        myRectangle.doubleSize();
+        double secondArea = myRectangle.calcArea();
+        assertEquals(firstArea * 4, secondArea);
 
         myRectangle = new Rectangle(5, 2);
-        assertEquals(20, myRectangle.doubleSize());
+        double firstArea2 = myRectangle.calcArea();
+        myRectangle.doubleSize();
+        double secondArea3 = myRectangle.calcArea();
+        assertEquals(firstArea2 * 4, secondArea3);
 
         myRectangle = new Rectangle(5, 10);
-        assertEquals(100, myRectangle.doubleSize());
+        double firstArea4 = myRectangle.calcArea();
+        myRectangle.doubleSize();
+        double secondArea5 = myRectangle.calcArea();
+        assertEquals(firstArea4 * 4, secondArea5);
 
     }
+        
 
     @Test
     public void longestSideWithinTest(){

@@ -1,6 +1,7 @@
 package edu.ithaca.dragon.shapes;
 
-public class Circle {
+
+public class Circle  implements Shape{
     private double radius;
 
     /**
@@ -8,7 +9,14 @@ public class Circle {
      */
     public Circle(double radius){
         this.radius = radius;
+        if (radius <= 0){
+            throw new IllegalArgumentException("Must be positive radius");
+        }
     }
+public double getRadius(){
+    return radius;
+}
+
 
     /**
      * @return the area of this circle
@@ -21,8 +29,8 @@ public class Circle {
     /**
      * @post doubles the size of this circle
      */
-    public double doubleSize(){
-        return radius * 2;
+    public void doubleSize(){
+        radius = radius * 2;
         
     }
 
@@ -32,4 +40,14 @@ public class Circle {
     public double longestLineWithin(){
         return radius * 2;
     }
+
+/*
+     * The method should return a String that says the shape that it is and information about the side lengths or the radius (depending on the shape).
+     */
+
+     public String toString(){
+        return "This is a Circle with a radius of:" + radius;
+
+    }
+
 } 
