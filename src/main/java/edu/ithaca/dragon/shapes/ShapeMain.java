@@ -7,10 +7,18 @@ import java.util.Scanner;
 public class ShapeMain {
     
     public static void main(String[] args){
+        
+        Shape myShapes = new Circle(5);
+        
+        
+        
+        
+        
+        
         //Make a list of 5 randomly-sized rectangles and print their area and the largest line that can be drawn through them
         //Allow the user to choose one, double the size of that one, and print them all again
         //Use a loop to repeat the process 5 times
-
+        
         Scanner scanner = new Scanner(System.in);
         for (int u = 0; u < 5; u++){
 
