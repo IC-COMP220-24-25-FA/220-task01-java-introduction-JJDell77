@@ -12,3 +12,9 @@ public interface Shape {
 
 
 }
+
+/*
+ * Shape myShape = new Circle();
+ * 
+ * 
+ */

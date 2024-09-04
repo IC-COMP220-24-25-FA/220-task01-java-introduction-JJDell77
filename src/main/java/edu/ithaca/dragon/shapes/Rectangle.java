@@ -32,5 +32,14 @@ public class Rectangle  implements Shape{
         }
 
     }
+
+    /*
+     * The method should return a String that says the shape that it is and information about the side lengths or the radius (depending on the shape).
+     */
+
+    public String toString(){
+        return "This is a Rectangle with a width of:" + width + " and a length of:" + length;
+
+    }
     
 }
