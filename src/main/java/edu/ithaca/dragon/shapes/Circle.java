@@ -1,5 +1,6 @@
 package edu.ithaca.dragon.shapes;
 
+
 public class Circle {
     private double radius;
 
@@ -8,6 +9,9 @@ public class Circle {
      */
     public Circle(double radius){
         this.radius = radius;
+        if (radius <= 0){
+            throw new IllegalArgumentException("Must be positive radius");
+        }
     }
 
     /**
