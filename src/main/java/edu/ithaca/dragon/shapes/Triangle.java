@@ -22,4 +22,13 @@ public class Triangle {
         return Math.sqrt(((base * base) + (height * height)));
     }
     
+    /*
+     * The method should return a String that says the shape that it is and information about the side lengths or the radius (depending on the shape).
+     */
+
+     public String toString(){
+        return "This is a Triangle with a Base of:" + base + " and a Height of:" + height;
+
+    }
+
 }

@@ -40,4 +40,14 @@ public double getRadius(){
     public double longestLineWithin(){
         return radius * 2;
     }
+
+/*
+     * The method should return a String that says the shape that it is and information about the side lengths or the radius (depending on the shape).
+     */
+
+     public String toString(){
+        return "This is a Circle with a radius of:" + radius;
+
+    }
+
 } 
