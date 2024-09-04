@@ -1,7 +1,7 @@
 package edu.ithaca.dragon.shapes;
 
 
-public class Circle {
+public class Circle  implements Shape{
     private double radius;
 
     /**
@@ -13,6 +13,10 @@ public class Circle {
             throw new IllegalArgumentException("Must be positive radius");
         }
     }
+public double getRadius(){
+    return radius;
+}
+
 
     /**
      * @return the area of this circle
@@ -25,8 +29,8 @@ public class Circle {
     /**
      * @post doubles the size of this circle
      */
-    public double doubleSize(){
-        return radius * 2;
+    public void doubleSize(){
+        radius = radius * 2;
         
     }
 
