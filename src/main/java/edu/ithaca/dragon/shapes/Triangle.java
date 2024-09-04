@@ -1,6 +1,6 @@
 package edu.ithaca.dragon.shapes;
 
-public class Triangle {
+public class Triangle implements Shape{
     private double base;
     private double height;
 
@@ -13,8 +13,9 @@ public class Triangle {
         return base * height / 2;
     }
 
-    public double doubleSize(){
-        return calcArea() * 2;
+    public void doubleSize(){
+        base = base * 2;
+        height = height * 2;
 
     }
 

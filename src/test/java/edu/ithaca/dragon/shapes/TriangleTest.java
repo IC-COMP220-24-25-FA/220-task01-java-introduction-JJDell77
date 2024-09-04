@@ -23,13 +23,16 @@ public class TriangleTest {
     @Test
     public void doubleSizeTest(){
         Triangle myTriangle = new Triangle(3, 4);
-        assertEquals(12, myTriangle.doubleSize());
+        myTriangle.doubleSize();
+        assertEquals(24, myTriangle.calcArea());
 
         myTriangle = new Triangle(5, 8);
-        assertEquals(40, myTriangle.doubleSize());
+        myTriangle.doubleSize();
+        assertEquals(80, myTriangle.calcArea());
 
         myTriangle = new Triangle(2, 100);
-        assertEquals(200, myTriangle.doubleSize());
+        myTriangle.doubleSize();
+        assertEquals(400, myTriangle.calcArea());
 
     }
 

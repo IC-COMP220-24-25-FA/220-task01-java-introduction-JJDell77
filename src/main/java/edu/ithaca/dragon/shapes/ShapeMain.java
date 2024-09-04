@@ -3,12 +3,45 @@ package edu.ithaca.dragon.shapes;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Random;
 
 public class ShapeMain {
     
     public static void main(String[] args){
         
-        Shape myShapes = new Circle(5);
+        /*create a list that holds shapes
+        Create a loop that adds 10 shapes to the list, choosing randomly between whether each shape is a Circle, Rectangle, or triangle.
+        Print each shape (by calling toString on the Shape).
+        Then, write a loop that doubles the size of each shape and prints them again.
+        */
+
+        List<Shape> shapes = new ArrayList<>();
+        Random random = new Random();
+
+        // Create 10 random shapes (Circle, Rectangle, Triangle)
+        for (int i = 0; i < 10; i++) {
+            int shapeType = random.nextInt(3); // 0: Circle, 1: Rectangle, 2: Triangle
+            if (shapeType == 0) {
+                shapes.add(new Circle(5 + random.nextDouble() * 10));
+            } else if (shapeType == 1) {
+                shapes.add(new Rectangle(5 + random.nextDouble() * 10, 5 + random.nextDouble() * 10));
+            } else {
+                shapes.add(new Triangle(5 + random.nextDouble() * 10, 5 + random.nextDouble() * 10));
+            }
+        }
+        
+        // Print original shapes
+        System.out.println("Original Shapes:");
+        for (Shape shape : shapes) {
+            System.out.println(shape);
+        }
+        
+        // Double size of each shape
+        System.out.println("\nDoubled Shapes:");
+        for (Shape shape : shapes) {
+            shape.doubleSize();
+            System.out.println(shape);
+        }
         
         
         
